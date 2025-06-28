@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Komunitas – Chunibyou Market</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/community.css" />
+</head>
+<body>
+  <header>
+    <h1>Zona Komunitas</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="project.html">Proyek</a>
+      <a href="about.html">Tentang</a>
+    </nav>
+  </header>
+  <main>
+    <section id="profile" class="reveal">
+      <h2>🧙 Profilmu</h2>
+      <input type="text" id="userAlias" placeholder="Masukkan nama panggilan" />
+      <button onclick="saveAlias()">Simpan</button>
+      <p id="greetingMsg"></p>
+    </section>
+
+    <section id="daily-quest" class="reveal"></section>
+    <section id="leaderboard" class="reveal"></section>
+    <section id="badge-wall" class="reveal"></section>
+    <section id="poll" class="reveal">
+      <h2>📊 Judul Favorit</h2>
+      <form id="voteForm">
+        <label><input type="radio" name="vote" value="Overlord Academy" /> Overlord Academy</label><br />
+        <label><input type="radio" name="vote" value="Chuunified Love" /> Chuunified Love</label><br />
+        <button type="submit">Kirim Suara</button>
+      </form>
+      <div id="pollResults"></div>
+    </section>
+    <section id="komentar" class="reveal">
+      <h2>💬 Ruang Komentar</h2>
+      <textarea id="commentBox" placeholder="Tinggalkan mantra..."></textarea><br />
+      <button onclick="postComment()">Kirim</button>
+      <ul id="commentList"></ul>
+    </section>
+  </main>
+
+  <script src="scripts/community.js"></script>
+</body>
+</html>
