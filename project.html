@@ -23,5 +23,14 @@
       <li><strong>Komunitas:</strong> Papan peringkat dan quest pembaca harian</li>
     </ul>
   </main>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then(() =>
+      console.log("Service Worker terdaftar!")
+    );
+  }
+</script>
+  
 </body>
 </html>
