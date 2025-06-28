@@ -20,5 +20,14 @@
     <p>Chunibyou Market adalah tempat berkumpulnya para pengelana dunia imajinasi yang haus akan novel ringan dan kekuatan chuunified! Dibangun oleh Kazue, seorang arsitek web yang memadukan sihir modular dan estetika otaku.</p>
     <p>Kami hadir sebagai wadah interaktif untuk komunitas yang ingin membaca, berbagi, dan menjelajahi dunia dengan gaya penuh aura magis.</p>
   </main>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then(() =>
+      console.log("Service Worker terdaftar!")
+    );
+  }
+</script>
+  
 </body>
 </html>
