@@ -52,5 +52,12 @@
   </main>
 
   <script src="scripts/main.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then(() =>
+      console.log("Service Worker terdaftar!")
+    );
+  }
+</script>
 </body>
 </html>
