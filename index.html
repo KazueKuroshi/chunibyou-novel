@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chunibyou Market</title>
+  <link rel="stylesheet" href="styles/main.css"/>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <meta property="og:title" content="Chunibyou Market">
+  <meta property="og:description" content="Portal web interaktif komunitas novel ringan dan otaku culture!">
+  <meta property="og:image" content="assets/images/preview.png">
+  <meta name="theme-color" content="#845ec2">
+</head>
+<body>
+  <header>
+    <h1>Chunibyou Market</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="project.html">Proyek</a>
+      <a href="about.html">Tentang</a>
+      <a href="community.html">Komunitas</a>
+    </nav>
+    <button onclick="toggleMode()">🌙/☀️</button>
+  </header>
+
+  <main>
+    <section id="genre-filter">
+      <button onclick="filterGenre('all')">Semua</button>
+      <button onclick="filterGenre('Fantasy')">Fantasy</button>
+      <button onclick="filterGenre('Romcom')">Romcom</button>
+    </section>
+
+    <section id="popular" class="reveal"></section>
+    <section id="updates" class="reveal">
+      <h2>Pembaruan Terbaru</h2>
+      <p>Fitur filter genre dan scroll animation telah ditambahkan!</p>
+    </section>
+    <section id="projects" class="reveal">
+      <h2>Proyek Aktif</h2>
+      <p>Proyek “Chronicles of Chuunified Love” sedang berlangsung.</p>
+    </section>
+    <section id="admin" class="reveal">
+      <h2>Dukungan Admin</h2>
+      <p>Hubungi kami melalui komunitas WhatsApp atau tab Komunitas.</p>
+    </section>
+    <section id="history" class="reveal">
+      <h2>Riwayat Bacaan</h2>
+      <p>Bookmark favoritmu akan muncul di sini 🔖</p>
+    </section>
+    <section id="snackbar"></section>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
