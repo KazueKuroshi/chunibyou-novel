@@ -1,0 +1,27 @@
+#daily-quest,
+#leaderboard,
+#badge-wall,
+#poll,
+#profile,
+#komentar {
+  margin: 2rem 0;
+  padding: 1rem;
+  background: #1b1b2f;
+  border-left: 5px solid #845ec2;
+  border-radius: 8px;
+}
+
+#badge-wall .badge {
+  font-size: 2rem;
+  margin: 0.3rem;
+}
+
+#commentBox {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 6px;
+  resize: vertical;
+}
